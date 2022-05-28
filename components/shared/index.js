@@ -8,17 +8,14 @@ export const Button = styled.button`
 
 export const Heading1 = styled.h1`
   font-family: Poppins, sans-serif;
-  font-size: 8rem;
+  font-size: 8vw;
   letter-spacing: 1rem;
   margin: 0;
 
   @media (${breakpoint.device.sm}) {
-    font-size: 4rem;
-    letter-spacing: 0.5rem;
-  }
+    font-size: 10vw;
 
-  @media (${breakpoint.device.xs}) {
-    font-size: 2rem;
+    letter-spacing: 0.5rem;
   }
 `;
 
