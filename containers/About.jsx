@@ -2,18 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { Heading2, MutedSubHeading, Paragraph } from '../components/shared';
 import { breakpoint } from '../styled/breakpoints.css';
-
+import Image from 'next/image';
 const About = () => {
   return (
     <TwoColumn>
       <Column>
-        <div
-          style={{
-            background: '#fff',
-            height: '400px',
-            width: '100%',
-          }}
-        ></div>
+        <Image src={'/hacker.svg'} alt='hacker' width={600} height={600} />
       </Column>
       <Column>
         <ContentWrapper>
@@ -45,7 +39,7 @@ export const TwoColumn = styled.div`
   width: 100%;
   max-width: ${breakpoint.size.lg};
   @media (${breakpoint.device.sm}) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 2rem 0 3rem 0;
   }
   @media (${breakpoint.device.xs}) {
@@ -69,6 +63,6 @@ export const Column = styled.div`
 export const ContentWrapper = styled.div`
   max-width: 500px;
   @media (${breakpoint.device.sm}) {
-    padding: 1rem;
+    padding: 1rem 0 3rem 0;
   }
 `;

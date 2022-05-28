@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoint } from '../../styled/breakpoints.css';
 
 export const CardWrapper = styled.div`
   display: flex;
@@ -6,11 +7,14 @@ export const CardWrapper = styled.div`
   max-width: 350px;
   align-items: center;
   padding: 1rem;
+  @media (${breakpoint.device.sm}) {
+    max-width: none;
+  }
 `;
 
 export const Placeholder = styled.div`
   width: 100%;
-  height: 200px;
+  height: 260px;
   background: white;
 `;
 

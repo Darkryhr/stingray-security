@@ -12,7 +12,13 @@ const Services = () => {
           paddingTop: '2rem',
         }}
       >
-        <Heading2>Our Services</Heading2>
+        <Heading2
+          style={{
+            textAlign: 'center',
+          }}
+        >
+          Our Services
+        </Heading2>
         <Lead>
           This is what we
           <strong> Do</strong>
