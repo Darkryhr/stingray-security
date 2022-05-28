@@ -18,7 +18,7 @@ export const Heading1 = styled.h1`
   }
 
   @media (${breakpoint.device.xs}) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 `;
 
