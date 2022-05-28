@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
         background: #1E1E1E;
         color: #fff;
         font-family: monospace;
+        overflow-x: hidden;
     }
 
     a {

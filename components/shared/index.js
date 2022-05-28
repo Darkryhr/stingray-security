@@ -13,8 +13,9 @@ export const Heading1 = styled.h1`
   padding: 0;
   margin: 0;
   @media (${breakpoint.device.sm}) {
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 0.5rem;
+    padding: 0 1rem;
   }
 
   @media (${breakpoint.device.xs}) {
