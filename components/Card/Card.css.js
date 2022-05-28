@@ -5,12 +5,12 @@ export const CardWrapper = styled.div`
   flex-direction: column;
   max-width: 350px;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem;
 `;
 
 export const Placeholder = styled.div`
-  width: 350px;
-  height: 250px;
+  width: 100%;
+  height: 200px;
   background: white;
 `;
 

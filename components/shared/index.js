@@ -41,7 +41,7 @@ export const Heading3 = styled.h3`
   font-size: 1.5rem;
   font-weight: 600;
   padding: 1.2rem;
-
+  text-align: center;
   @media (${breakpoint.device.sm}) {
     font-size: 1.2rem;
   }
