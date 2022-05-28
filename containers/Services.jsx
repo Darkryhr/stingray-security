@@ -56,4 +56,5 @@ export const ServicesWrapper = styled.div`
   justify-content: space-evenly;
   margin: 0 auto;
   min-height: 85vh;
+  padding: 2rem 0;
 `;

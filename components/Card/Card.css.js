@@ -9,6 +9,7 @@ export const CardWrapper = styled.div`
   padding: 1rem;
   @media (${breakpoint.device.sm}) {
     max-width: none;
+    padding-bottom: 2rem;
   }
 `;
 

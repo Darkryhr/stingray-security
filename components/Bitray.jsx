@@ -8,7 +8,7 @@ const Bitray = () => {
       xmlns='http://www.w3.org/2000/svg'
       viewBox='0 0 353.136 170.702'
       fill='#fff'
-      opacity={0.4}
+      opacity={0.2}
     >
       <g>
         <path
