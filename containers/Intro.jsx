@@ -8,8 +8,10 @@ const Intro = () => {
   return (
     <BitrayContainer>
       <Bitray />
-      <Heading1>STINGRAY</Heading1>
-      <Subheading>Bespoke Cyber Solutions</Subheading>
+      <ContentWrapper>
+        <Heading1>STINGRAY</Heading1>
+        <Subheading>Bespoke Cyber Solutions</Subheading>
+      </ContentWrapper>
     </BitrayContainer>
   );
 };
@@ -26,4 +28,13 @@ export const BitrayContainer = styled.div`
   min-height: 92vh;
   position: relative;
   overflow: hidden;
+`;
+
+export const ContentWrapper = styled.div`
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 `;

@@ -10,12 +10,11 @@ export const Heading1 = styled.h1`
   font-family: Poppins, sans-serif;
   font-size: 8rem;
   letter-spacing: 1rem;
-  padding: 0;
   margin: 0;
+
   @media (${breakpoint.device.sm}) {
-    font-size: 3rem;
+    font-size: 4rem;
     letter-spacing: 0.5rem;
-    padding: 0 1rem;
   }
 
   @media (${breakpoint.device.xs}) {
