@@ -7,13 +7,28 @@ export const FooterWrapper = styled.div`
   margin: 0 auto;
   min-height: 18vh;
   display: flex;
+
   justify-content: space-between;
+  position: relative;
+  padding: 2rem;
   align-items: center;
+  @media (${breakpoint.device.sm}) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
 `;
 
 export const LogoWrapper = styled.div`
   max-width: 120px;
   padding: 1rem 0;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  @media (${breakpoint.device.sm}) {
+    max-width: 120px;
+    padding: 2rem 0;
+  }
 `;
 
 export const Copy = styled.p`
@@ -24,5 +39,14 @@ export const Copy = styled.p`
   span {
     font-weight: 500;
     opacity: 0.6;
+  }
+`;
+
+export const Wrapper = styled.div`
+  width: 100%;
+  max-width: 220px;
+  text-align: end;
+  @media (${breakpoint.device.sm}) {
+    text-align: center;
   }
 `;
