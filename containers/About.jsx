@@ -7,7 +7,7 @@ const About = () => {
   return (
     <TwoColumn>
       <Column>
-        <Image src={'/hacker.svg'} alt='hacker' width={600} height={600} />
+        <Image src={'/hacker.png'} alt='hacker' width={500} height={500} />
       </Column>
       <Column>
         <ContentWrapper>

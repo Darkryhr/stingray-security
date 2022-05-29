@@ -89,6 +89,7 @@ export const LogoWrapper = styled.div`
   max-width: 180px;
   padding: 1rem 0;
   margin-bottom: 0.5rem;
+  cursor: pointer;
   @media (${breakpoint.device.sm}) {
     max-width: 150px;
   }

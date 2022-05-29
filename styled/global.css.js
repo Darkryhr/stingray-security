@@ -22,6 +22,10 @@ const GlobalStyle = createGlobalStyle`
         color: inherit;
     }
 
+    img {
+    image-rendering: crisp-edges;
+    }
+
 `;
 
 export default GlobalStyle;

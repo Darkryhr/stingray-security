@@ -29,9 +29,11 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <LogoWrapper>
-          <Logo />
-        </LogoWrapper>
+        <Link href='/sss'>
+          <LogoWrapper>
+            <Logo />
+          </LogoWrapper>
+        </Link>
         <NavMenu open={open}>
           <Button onClick={() => setOpen(false)} className='close'>
             <Close />

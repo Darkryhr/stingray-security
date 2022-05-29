@@ -4,6 +4,8 @@ import About from '../containers/About';
 import Contact from '../containers/Contact';
 import Intro from '../containers/Intro';
 import Services from '../containers/Services';
+import Image from 'next/image';
+import bitmap from '../public/grad.svg';
 
 const Home = () => {
   return (
@@ -11,6 +13,16 @@ const Home = () => {
       <DarkStrip>
         <Intro />
       </DarkStrip>
+
+      <Image
+        src={bitmap}
+        alt='pixel'
+        style={{
+          height: 'auto',
+          width: '100%',
+        }}
+      />
+
       <About />
       <DarkStrip>
         <Services />
