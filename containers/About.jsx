@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { Heading2, MutedSubHeading, Paragraph } from '../components/shared';
 import { breakpoint } from '../styled/breakpoints.css';
 import Image from 'next/image';
+
 const About = () => {
   return (
     <TwoColumn>
@@ -19,7 +20,7 @@ const About = () => {
             internet, and there is not a single soul who can live without some
             connection to a computer. With that change many opportunities rose,
             but you have to think like a hacker in order to seize them, And
-            that’s what we do.
+            that&apos;s what we do.
             <br />
             <br />
             We have great mind working here and they will be able to solve any
