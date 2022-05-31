@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { breakpoint } from '../../styled/breakpoints.css';
+import { motion } from 'framer-motion';
 
 export const Nav = styled.nav`
   width: 100%;
@@ -31,7 +32,7 @@ export const GradientBorder = styled.div`
   width: 100%;
 `;
 
-export const NavLink = styled.li`
+export const NavLink = styled(motion.li)`
   font-family: Poppins, sans-serif;
   cursor: pointer;
   display: block;
@@ -52,15 +53,14 @@ export const NavLink = styled.li`
   }
 `;
 
-export const NavMenu = styled.div`
-  transform: translateX(0);
+export const NavMenu = styled(motion.div)`
   .close {
     display: none;
   }
   @media (${breakpoint.device.sm}) {
     position: fixed;
     width: 60%;
-    transform: ${props => (props.open ? 'translateX(0)' : 'translateX(100%)')};
+
     height: 100vh;
     z-index: 999;
     right: 0;

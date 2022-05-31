@@ -25,7 +25,7 @@ export const BitrayContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 92vh;
+  min-height: calc(100vh - 85px);
   position: relative;
   overflow: hidden;
 `;
