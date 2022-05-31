@@ -1,6 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading2, MutedSubHeading, Paragraph } from '../components/shared';
+import {
+  Heading2,
+  Lead,
+  MutedSubHeading,
+  Paragraph,
+} from '../components/shared';
 import { breakpoint } from '../styled/breakpoints.css';
 import Image from 'next/image';
 
@@ -13,7 +18,9 @@ const About = () => {
       <Column>
         <ContentWrapper>
           <Heading2>Pushing Forward</Heading2>
-          <MutedSubHeading>We aspire to raise the bar, period.</MutedSubHeading>
+          <Lead style={{ textAlign: 'start' }}>
+            We aspire to raise the bar, period.
+          </Lead>
           <Paragraph>
             In this day and age cyber-warfare became an integral part of our
             lives. We are getting more and more entangled with computers and the

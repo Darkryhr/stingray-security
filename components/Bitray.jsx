@@ -30,5 +30,8 @@ const Svg = styled.div`
 
   img {
     object-fit: contain;
+    @media (${breakpoint.device.md}) {
+      object-fit: cover;
+    }
   }
 `;

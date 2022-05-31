@@ -67,5 +67,8 @@ export const ServicesWrapper = styled.div`
   justify-content: space-evenly;
   margin: 0 auto;
   min-height: 85vh;
-  padding: 2rem 0;
+  padding: 5rem 5vw;
+  @media (${breakpoint.device.md}) {
+    padding: 1rem 0;
+  }
 `;

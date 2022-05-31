@@ -22,13 +22,20 @@ export const Nav = styled.nav`
       display: block;
       width: 2.5rem;
       cursor: pointer;
+      transition: ease all 0.15s;
+      &:hover {
+        transform: scale(1.15);
+      }
+      &:active {
+        transform: scale(0.8);
+      }
     }
   }
 `;
 
 export const GradientBorder = styled.div`
   background-color: #4c4177;
-  background-image: linear-gradient(315deg, #7b287d 0%, #0094c6 74%);
+  background-image: linear-gradient(315deg, #7882f9 0%, #4f1271 74%);
   height: 0.3rem;
   width: 100%;
 `;
@@ -77,11 +84,21 @@ export const NavMenu = styled.div`
     right: 0;
     top: 0;
     background-color: #000;
-
+    /* border-left: 3px solid linear-gradient(315deg, #7882f9 0%, #4f1271 74%); */
     .close {
       display: unset;
       float: right;
       margin: 2em;
+    }
+    &::after {
+      content: ' ';
+      height: 100vh;
+      width: 1%;
+      display: block;
+      position: absolute;
+      top: 0;
+      z-index: -2;
+      background: linear-gradient(315deg, #7882f9 0%, #4f1271 74%);
     }
   }
 
@@ -123,7 +140,7 @@ export const LogoWrapper = styled.div`
 
   &:hover {
     svg {
-      transform: translateX(5px);
+      transform: translateX(3px);
     }
     span {
       letter-spacing: 1px;

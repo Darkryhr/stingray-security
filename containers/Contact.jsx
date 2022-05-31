@@ -26,7 +26,7 @@ export const ContactWrapper = styled.footer`
   align-items: center;
   justify-content: center;
   min-height: 40vh;
-  padding: 1rem;
+  padding: 5rem 5vw;
 `;
 
 export const MailLink = styled.a`

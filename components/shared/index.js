@@ -50,7 +50,7 @@ export const Heading3 = styled.h3`
 `;
 
 export const Lead = styled.p`
-  color: #ff6161;
+  color: #7882f9;
   text-align: center;
   font-size: 1.5rem;
   padding: 1.5rem 0;
