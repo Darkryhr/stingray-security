@@ -5,7 +5,11 @@ import Navbar from '../Navbar';
 const index = ({ children }) => {
   return (
     <main>
-      <header>
+      <header
+        style={{
+          background: '#131313',
+        }}
+      >
         <Navbar />
       </header>
       <div>{children}</div>

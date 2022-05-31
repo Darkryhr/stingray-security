@@ -25,17 +25,17 @@ const Services = () => {
         </Lead>
       </div>
       <Container>
-        <Card heading='Cybersecurity Consulting'>
+        <Card heading='Cybersecurity Consulting' src={'/compass.svg'}>
           We don&apos;t believe in simple pen-testing, we believe in solving a
           problem, your organization being vulnerable to hackers is one, We can
           solve it.
         </Card>
-        <Card heading='Cybersecurity Taeching'>
+        <Card heading='Cybersecurity Teaching' src={'/apple.svg'}>
           We have tremendous experience in turning newcomers to the
           CyberSecurity world into amazing hackers, Should you want a more
           proficient security guy, Or a team of low-level researchers.
         </Card>
-        <Card heading='Cybersecurity Tools'>
+        <Card heading='Cybersecurity Tools' src={'/tools.svg'}>
           Many products are coming in the near future, Stay tuned.
         </Card>
       </Container>
@@ -54,6 +54,7 @@ export const Container = styled.div`
   padding-bottom: 3rem;
   @media (${breakpoint.device.sm}) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <TwoColumn>
       <Column>
-        <Image src={'/hacker.png'} alt='hacker' width={500} height={500} />
+        <Image src={'/hacker.png'} alt='hacker' width={450} height={450} />
       </Column>
       <Column>
         <ContentWrapper>
@@ -39,9 +39,10 @@ export const TwoColumn = styled.div`
   margin: 0 auto;
   width: 100%;
   max-width: ${breakpoint.size.lg};
+  padding: 5rem 5vw;
   @media (${breakpoint.device.sm}) {
     flex-direction: column;
-    padding: 2rem 0 3rem 0;
+    padding: 2rem 1rem;
   }
   @media (${breakpoint.device.xs}) {
   }
@@ -53,17 +54,16 @@ export const Column = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  padding: 1rem;
   @media (${breakpoint.device.sm}) {
     justify-content: flex-start;
     min-height: unset;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 `;
 
 export const ContentWrapper = styled.div`
-  max-width: 500px;
   @media (${breakpoint.device.sm}) {
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0;
   }
 `;

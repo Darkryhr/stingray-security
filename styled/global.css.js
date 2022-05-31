@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
     
     body {
         background: #1E1E1E;
-        color: #fff;
+        color: #F9F8F8;
         font-family: monospace;
         overflow-x: hidden;
     }

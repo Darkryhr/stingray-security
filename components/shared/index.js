@@ -35,6 +35,8 @@ export const Heading2 = styled.h2`
 export const Heading3 = styled.h3`
   font-family: Poppins, sans-serif;
   font-size: 1.5rem;
+  min-width: 350px;
+  /* word-spacing: 350px; */
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;

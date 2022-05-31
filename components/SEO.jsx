@@ -40,7 +40,7 @@ const SEO = ({
       <meta property='og:site_name' content='Stingray Security' />
       <meta property='og:type' content='website' />
       <meta property='og:description' content={desc} />
-      <title>{title}</title>
+      <title>Bespoke Cyber Solutions | Stingray Security</title>
     </Head>
   );
 };

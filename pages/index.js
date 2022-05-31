@@ -6,6 +6,7 @@ import Intro from '../containers/Intro';
 import Services from '../containers/Services';
 import Image from 'next/image';
 import bitmap from '../public/grad.svg';
+import { breakpoint } from '../styled/breakpoints.css';
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <DarkStrip>
         <Intro />
       </DarkStrip>
-
+      {/* 
       <Image
         src={bitmap}
         alt='pixel'
@@ -21,9 +22,10 @@ const Home = () => {
           height: 'auto',
           width: '100%',
         }}
-      />
+      /> */}
 
       <About />
+      {/* <DualStrip></DualStrip> */}
       <DarkStrip>
         <Services />
       </DarkStrip>
@@ -36,4 +38,11 @@ export default Home;
 
 export const DarkStrip = styled.div`
   background: #131313;
+`;
+
+export const DualStrip = styled.div`
+  background: linear-gradient(90deg, #000 50%, #1e1e1e 50%);
+  @media (${breakpoint.device.sm}) {
+    background: none;
+  }
 `;

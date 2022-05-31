@@ -1,16 +1,17 @@
 import styled from 'styled-components';
 import { breakpoint } from '../../styled/breakpoints.css';
-import { motion } from 'framer-motion';
 
 export const Nav = styled.nav`
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  ${breakpoint.device.lg};
+  max-width: ${breakpoint.size.sm};
+
   margin: 0 auto;
   padding: 0 2.5rem;
   max-height: 85px;
+  /* background: #131313; */
   @media (${breakpoint.device.sm}) {
     padding: 0 1rem;
   }
@@ -27,19 +28,25 @@ export const Nav = styled.nav`
 
 export const GradientBorder = styled.div`
   background-color: #4c4177;
-  background-image: linear-gradient(315deg, #4c4177 0%, #2a5470 74%);
+  background-image: linear-gradient(315deg, #7b287d 0%, #0094c6 74%);
   height: 0.3rem;
   width: 100%;
 `;
 
-export const NavLink = styled(motion.li)`
+export const NavLink = styled.li`
   font-family: Poppins, sans-serif;
   cursor: pointer;
   display: block;
   padding: 1rem 2rem;
-  font-size: 1.1rem;
+  font-weight: 500;
+  transition: ease 0.2s;
   &:last-of-type {
     padding-right: 0;
+  }
+
+  &:hover {
+    opacity: 0.8;
+    transform: scale(1.1);
   }
 
   @media (${breakpoint.device.sm}) {
@@ -48,19 +55,23 @@ export const NavLink = styled(motion.li)`
     padding: 1.3rem 2rem;
 
     &:hover {
-      background: #1e1e1e;
+      opacity: 1;
+      color: #000;
+      background: #fff;
     }
   }
 `;
 
-export const NavMenu = styled(motion.div)`
+export const NavMenu = styled.div`
+  transition: ease all 0.4s;
+  transform: translateX(0);
   .close {
     display: none;
   }
   @media (${breakpoint.device.sm}) {
     position: fixed;
-    width: 60%;
-
+    width: 40%;
+    transform: ${props => (props.open ? 'translateX(0)' : 'translateX(100%)')};
     height: 100vh;
     z-index: 999;
     right: 0;
@@ -72,6 +83,10 @@ export const NavMenu = styled(motion.div)`
       float: right;
       margin: 2em;
     }
+  }
+
+  @media (${breakpoint.device.md}) {
+    width: 60%;
   }
 `;
 
@@ -86,11 +101,34 @@ export const MenuList = styled.ul`
 `;
 
 export const LogoWrapper = styled.div`
-  max-width: 180px;
   padding: 1rem 0;
   margin-bottom: 0.5rem;
   cursor: pointer;
-  @media (${breakpoint.device.sm}) {
-    max-width: 150px;
+  display: flex;
+  align-items: center;
+  min-height: 65px;
+  svg {
+    max-width: 80px;
+    fill: #fff;
+    transition: ease 150ms;
+  }
+  span {
+    margin-top: 8px;
+    padding-left: 10px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #fff;
+    transition: ease 150ms;
+  }
+
+  &:hover {
+    svg {
+      transform: translateX(5px);
+    }
+    span {
+      letter-spacing: 1px;
+    }
   }
 `;
+
+// 7B287D
