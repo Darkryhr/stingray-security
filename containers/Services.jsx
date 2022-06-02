@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Card from '../components/Card';
 import { Divider, Heading2, Pre } from '../components/shared';
 import { breakpoint } from '../styled/breakpoints.css';
+import { Apple, Compass, Tool } from '../components/icons';
 
 const Services = () => {
   return (
@@ -27,17 +28,17 @@ const Services = () => {
         <Divider center />
       </div>
       <Container>
-        <Card heading='Cybersecurity Consulting' src={'/compass.svg'}>
+        <Card heading='Cybersecurity Consulting' src={<Compass />}>
           We don&apos;t believe in simple pen-testing, we believe in solving a
           problem, your organization being vulnerable to hackers is one, We can
           solve it.
         </Card>
-        <Card heading='Cybersecurity Teaching' src={'/apple.svg'}>
+        <Card heading='Cybersecurity Teaching' src={<Apple />}>
           We have tremendous experience in turning newcomers to the
           CyberSecurity world into amazing hackers, Should you want a more
           proficient security guy, Or a team of low-level researchers.
         </Card>
-        <Card heading='Cybersecurity Tools' src={'/tools.svg'}>
+        <Card heading='Cybersecurity Tools' src={<Tool />}>
           Many products are coming in the near future, Stay tuned.
         </Card>
       </Container>
