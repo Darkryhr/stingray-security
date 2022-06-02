@@ -4,31 +4,30 @@ import About from '../containers/About';
 import Contact from '../containers/Contact';
 import Intro from '../containers/Intro';
 import Services from '../containers/Services';
-import { Logo, TextlessLogo } from '../components/icons';
 import { breakpoint } from '../styled/breakpoints.css';
+import SectionWrapper from '../components/SectionWrapper';
 
 const Home = () => {
   return (
     <>
       <DarkStrip>
-        <Intro />
+        <SectionWrapper>
+          <Intro />
+        </SectionWrapper>
       </DarkStrip>
-      {/* 
-      <Image
-        src={bitmap}
-        alt='pixel'
-        style={{
-          height: 'auto',
-          width: '100%',
-        }}
-      /> */}
 
-      <About />
+      <SectionWrapper>
+        <About />
+      </SectionWrapper>
       {/* <DualStrip></DualStrip> */}
       <DarkStrip>
-        <Services />
+        <SectionWrapper>
+          <Services />
+        </SectionWrapper>
       </DarkStrip>
-      <Contact />
+      <SectionWrapper>
+        <Contact />
+      </SectionWrapper>
     </>
   );
 };
