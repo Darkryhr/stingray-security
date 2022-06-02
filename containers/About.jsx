@@ -1,11 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {
-  Heading2,
-  Lead,
-  MutedSubHeading,
-  Paragraph,
-} from '../components/shared';
+import { Heading2, Lead, Paragraph } from '../components/shared';
 import { breakpoint } from '../styled/breakpoints.css';
 import Image from 'next/image';
 
