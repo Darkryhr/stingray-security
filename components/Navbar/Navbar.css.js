@@ -89,7 +89,7 @@ export const NavLink = styled.li`
       background: #fff;
     }
 
-    &:active {
+    &:focus {
       background: none;
       transform: scale(1);
     }
