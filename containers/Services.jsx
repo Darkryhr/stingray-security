@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Card from '../components/Card';
-import { Heading2, Lead } from '../components/shared';
+import { Divider, Heading2, Pre } from '../components/shared';
 import { breakpoint } from '../styled/breakpoints.css';
 
 const Services = () => {
@@ -12,17 +12,19 @@ const Services = () => {
           paddingTop: '2rem',
         }}
       >
-        <Heading2
+        <Pre
           style={{
             textAlign: 'center',
           }}
         >
           Our Services
-        </Heading2>
-        <Lead>
+        </Pre>
+        <Heading2>
           This is what we
           <strong> Do</strong>
-        </Lead>
+        </Heading2>
+
+        <Divider center />
       </div>
       <Container>
         <Card heading='Cybersecurity Consulting' src={'/compass.svg'}>
@@ -69,6 +71,6 @@ export const ServicesWrapper = styled.div`
   min-height: 85vh;
   padding: 5rem 5vw;
   @media (${breakpoint.device.md}) {
-    padding: 1rem 0;
+    padding: 4rem 0 1rem 0;
   }
 `;

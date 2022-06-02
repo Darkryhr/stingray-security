@@ -51,39 +51,48 @@ export const Heading1 = styled.h1`
 
 export const Heading2 = styled.h2`
   font-family: Poppins, sans-serif;
-  font-size: 2.5rem;
-
+  font-size: 2vw;
+  padding: 1rem 0;
+  ${props => (props.center ? 'text-align:center;' : '')}
   @media (${breakpoint.device.sm}) {
-    font-size: 1.5rem;
+    font-size: 5vw;
   }
 
   @media (${breakpoint.device.xs}) {
-    font-size: 1rem;
+    font-size: 8vw;
   }
 `;
 
 export const Heading3 = styled.h3`
   font-family: Poppins, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.4vw;
   min-width: 350px;
   /* word-spacing: 350px; */
   font-weight: 600;
   padding: 1.2rem;
   text-align: center;
   @media (${breakpoint.device.sm}) {
-    font-size: 1.2rem;
+    font-size: 2.8vw;
   }
 
   @media (${breakpoint.device.xs}) {
-    font-size: 0.9rem;
+    font-size: 4.5vw;
   }
 `;
 
 export const Lead = styled.p`
   color: #7882f9;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 4vw;
   padding: 1.5rem 0;
+`;
+
+export const Pre = styled.h4`
+  color: #7882f9;
+  font-family: Poppins, sans-serif;
+
+  font-weight: 600;
+  font-size: 1.2rem;
 `;
 
 export const Subheading = styled.h4`
@@ -112,4 +121,15 @@ export const Paragraph = styled.p`
 export const MutedParagraph = styled.p`
   font-size: 1.1rem;
   opacity: 0.5;
+`;
+
+export const Divider = styled.div`
+  width: 36px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.7;
+
+  margin: 0.5rem ${props => (props.center ? 'auto' : 0)} 1.5rem
+    ${props => (props.center ? 'auto' : 0)};
 `;

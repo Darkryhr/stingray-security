@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardWrapper, Paragraph, Placeholder } from './Card.css';
+import { CardWrapper, Paragraph } from './Card.css';
 import Image from 'next/image';
 
 import { Heading3 } from '../shared';

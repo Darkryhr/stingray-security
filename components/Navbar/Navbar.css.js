@@ -55,7 +55,8 @@ export const NavLink = styled.li`
   }
 
   &:hover {
-    opacity: 0.8;
+    color: #7882f9;
+
     transform: scale(1.1);
   }
 

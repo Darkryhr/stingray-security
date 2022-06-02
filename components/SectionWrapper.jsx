@@ -17,20 +17,23 @@ const variants = {
 const SectionWrapper = ({ children }) => {
   const control = useAnimation();
   const [ref, inView] = useInView({
-    threshold: 0.2,
+    threshold: 0.1,
   });
 
   useEffect(() => {
     if (inView) {
       control.start('visible');
-    } else {
-      control.start('hidden');
     }
+    // else {
+    //   control.start('hidden');
+    // }
   }, [control, inView]);
 
   return (
     <motion.div
-      className='box'
+      style={{
+        position: 'relative',
+      }}
       ref={ref}
       variants={variants}
       initial='hidden'

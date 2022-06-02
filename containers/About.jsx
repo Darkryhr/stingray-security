@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Heading2, Lead, Paragraph } from '../components/shared';
+import { Divider, Heading2, Lead, Paragraph, Pre } from '../components/shared';
 import { breakpoint } from '../styled/breakpoints.css';
 import Image from 'next/image';
 
@@ -12,10 +12,12 @@ const About = () => {
       </Column>
       <Column>
         <ContentWrapper>
-          <Heading2>Pushing Forward</Heading2>
-          <Lead style={{ textAlign: 'start' }}>
+          <Pre>Pushing Forward</Pre>
+
+          <Heading2 style={{ textAlign: 'start' }}>
             We aspire to raise the bar, period.
-          </Lead>
+          </Heading2>
+          <Divider />
           <Paragraph>
             In this day and age cyber-warfare became an integral part of our
             lives. We are getting more and more entangled with computers and the
@@ -42,9 +44,10 @@ export const TwoColumn = styled.div`
   width: 100%;
   max-width: ${breakpoint.size.lg};
   padding: 5rem 5vw;
+  position: relative;
   @media (${breakpoint.device.sm}) {
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem 2rem 1rem;
   }
   @media (${breakpoint.device.xs}) {
   }
