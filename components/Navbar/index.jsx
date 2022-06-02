@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   GradientBorder,
   Nav,
@@ -13,6 +13,17 @@ import { Button } from '../shared';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  let ref = useRef(null);
+
+  const handleClickOutside = event => {
+    if (ref.current && !ref.current.contains(event.target)) setOpen(false);
+  };
+
+  useEffect(() => {
+    document.addEventListener('click', handleClickOutside, true);
+    return () =>
+      document.removeEventListener('click', handleClickOutside, true);
+  });
 
   return (
     <>
@@ -30,7 +41,7 @@ const Navbar = () => {
             <span>StingraySecurity</span>
           </LogoWrapper>
         </Link>
-        <NavMenu open={open}>
+        <NavMenu open={open} ref={ref} onClick={() => setOpen(false)}>
           <Button onClick={() => setOpen(false)} className='close'>
             <Close />
           </Button>
@@ -39,10 +50,13 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </NavLink>
             <NavLink>
-              <Link href='/'>About Us</Link>
+              <Link href='#about-section'>About Us</Link>
             </NavLink>
             <NavLink>
-              <Link href='/'>Contact</Link>
+              <Link href='#services-section'>Services</Link>
+            </NavLink>
+            <NavLink>
+              <Link href='#contact-section'>Contact</Link>
             </NavLink>
           </MenuList>
         </NavMenu>

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <TwoColumn>
+    <TwoColumn id='about-section'>
       <Column>
         <Image src={'/hacker.png'} alt='hacker' width={450} height={450} />
       </Column>

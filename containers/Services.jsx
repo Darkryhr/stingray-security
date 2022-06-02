@@ -6,7 +6,7 @@ import { breakpoint } from '../styled/breakpoints.css';
 
 const Services = () => {
   return (
-    <ServicesWrapper>
+    <ServicesWrapper id='services-section'>
       <div
         style={{
           paddingTop: '2rem',

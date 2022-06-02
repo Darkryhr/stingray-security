@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
-    <ContactWrapper>
+    <ContactWrapper id='contact-section'>
       <Block />
       <Pre>Let&apos;s Talk</Pre>
       <Heading2 center>We will come up with a solution, try us.</Heading2>

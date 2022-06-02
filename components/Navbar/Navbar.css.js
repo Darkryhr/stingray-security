@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { breakpoint } from '../../styled/breakpoints.css';
 import { motion } from 'framer-motion';
+import { keyframes } from 'styled-components';
 export const Nav = styled.nav`
   width: 100%;
   display: flex;
@@ -33,9 +34,26 @@ export const Nav = styled.nav`
   }
 `;
 
+const flow = keyframes`
+
+0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+
+
+`;
+
 export const GradientBorder = styled.div`
   background-color: #4c4177;
-  background-image: linear-gradient(315deg, #7882f9 0%, #4f1271 74%);
+  background: linear-gradient(270deg, #7882f9 0%, #4f1271 74%);
+  background-size: 400% 400%;
+  animation: ${flow} 8s ease infinite;
   height: 0.3rem;
   width: 100%;
   @media (${breakpoint.device.sm}) {
@@ -88,7 +106,6 @@ export const NavMenu = styled.div`
     right: 0;
     top: 0;
     background-color: #000;
-    /* border-left: 3px solid linear-gradient(315deg, #7882f9 0%, #4f1271 74%); */
     .close {
       display: unset;
       float: right;
