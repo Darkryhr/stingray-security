@@ -13,13 +13,11 @@ const Home = () => {
       <DarkStrip>
         <SectionWrapper>
           <Intro />
-          <Test dark />
         </SectionWrapper>
       </DarkStrip>
 
       <SectionWrapper>
         <About />
-        <Test />
       </SectionWrapper>
       {/* <DualStrip></DualStrip> */}
       <DarkStrip>
@@ -45,13 +43,4 @@ export const DualStrip = styled.div`
   @media (${breakpoint.device.sm}) {
     background: none;
   }
-`;
-
-export const Test = styled.div`
-  clip-path: polygon(100% 0, 0 0, 100% 12%);
-  position: absolute;
-  background-color: ${props => (props.dark ? ' #131313' : '#1E1E1E')};
-  width: 100vw;
-  height: 70%;
-  bottom: -70%;
 `;
