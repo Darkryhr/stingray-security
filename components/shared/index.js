@@ -29,7 +29,7 @@ export const IconButton = styled(motion.button)`
       fill: #000;
     }
   }
-  &:active {
+  &:focus {
     svg {
       fill: #fff;
     }
