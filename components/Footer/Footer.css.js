@@ -10,7 +10,7 @@ export const FooterWrapper = styled.div`
 
   justify-content: space-between;
   position: relative;
-  padding: 2rem;
+  padding: 2rem 5vw;
   align-items: center;
   @media (${breakpoint.device.sm}) {
     flex-direction: column-reverse;
@@ -49,4 +49,9 @@ export const Wrapper = styled.div`
   @media (${breakpoint.device.sm}) {
     text-align: center;
   }
+`;
+
+export const SocialWrapper = styled.div`
+  display: flex;
+  justify-content: space-evenly;
 `;

@@ -1,9 +1,34 @@
 import styled from 'styled-components';
 import { breakpoint } from '../../styled/breakpoints.css';
+import { motion } from 'framer-motion';
 
 export const Button = styled.button`
   background: none;
   border: none;
+`;
+
+export const IconButton = styled(motion.button)`
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  border: 2px solid white;
+  svg {
+    height: 1.35em;
+    width: 1.35em;
+    fill: #fff;
+    transition: 0.3s ease all;
+  }
+  &:hover {
+    svg {
+      fill: #000;
+    }
+  }
 `;
 
 export const Heading1 = styled.h1`

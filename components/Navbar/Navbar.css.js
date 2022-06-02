@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { breakpoint } from '../../styled/breakpoints.css';
-
+import { motion } from 'framer-motion';
 export const Nav = styled.nav`
   width: 100%;
   display: flex;
@@ -120,7 +120,7 @@ export const MenuList = styled.ul`
   }
 `;
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled(motion.div)`
   padding: 1rem 0;
   margin-bottom: 0.5rem;
   cursor: pointer;
@@ -139,15 +139,6 @@ export const LogoWrapper = styled.div`
     font-weight: 700;
     color: #fff;
     transition: ease 150ms;
-  }
-
-  &:hover {
-    svg {
-      transform: translateX(3px);
-    }
-    span {
-      letter-spacing: 1px;
-    }
   }
 `;
 

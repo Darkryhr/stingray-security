@@ -1,7 +1,14 @@
 import React from 'react';
-import { Paragraph } from '../shared';
-import { Copy, FooterWrapper, LogoWrapper, Wrapper } from './Footer.css';
+import { IconButton } from '../shared';
+import {
+  Copy,
+  FooterWrapper,
+  LogoWrapper,
+  SocialWrapper,
+  Wrapper,
+} from './Footer.css';
 import { Logo } from '../icons';
+import { BsGoogle, BsFacebook, BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
   return (
@@ -9,14 +16,36 @@ const Footer = () => {
       <Wrapper>
         <Copy>
           <span>&copy;2022 </span>
-          stingray security
+          stingraysecurity
         </Copy>
       </Wrapper>
       <LogoWrapper>
         <Logo />
       </LogoWrapper>
       <Wrapper>
-        <Paragraph>Links</Paragraph>
+        <SocialWrapper>
+          <IconButton
+            whileHover={{
+              backgroundColor: '#fff',
+            }}
+          >
+            <BsFacebook />
+          </IconButton>
+          <IconButton
+            whileHover={{
+              backgroundColor: '#fff',
+            }}
+          >
+            <BsGoogle />
+          </IconButton>
+          <IconButton
+            whileHover={{
+              backgroundColor: '#fff',
+            }}
+          >
+            <BsTwitter />
+          </IconButton>
+        </SocialWrapper>
       </Wrapper>
     </FooterWrapper>
   );

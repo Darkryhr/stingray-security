@@ -18,7 +18,14 @@ const Navbar = () => {
     <>
       <Nav>
         <Link href='/'>
-          <LogoWrapper>
+          <LogoWrapper
+            transition={{
+              duration: 0.05,
+            }}
+            whileHover={{
+              letterSpacing: '1px',
+            }}
+          >
             <Logo />
             <span>StingraySecurity</span>
           </LogoWrapper>
