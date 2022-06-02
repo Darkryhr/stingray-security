@@ -6,7 +6,7 @@ import { breakpoint } from '../styled/breakpoints.css';
 const Bitray = () => {
   return (
     <Svg>
-      <Image src={'/bitray.png'} alt='bitmap stingray' layout='fill' />
+      <Image src={'/bitray.png'} alt='bitmap stingray' layout='fill' priority />
     </Svg>
   );
 };

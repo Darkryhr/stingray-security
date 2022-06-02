@@ -38,6 +38,9 @@ export const GradientBorder = styled.div`
   background-image: linear-gradient(315deg, #7882f9 0%, #4f1271 74%);
   height: 0.3rem;
   width: 100%;
+  @media (${breakpoint.device.sm}) {
+    display: none;
+  }
 `;
 
 export const NavLink = styled.li`
