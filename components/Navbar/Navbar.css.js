@@ -74,7 +74,6 @@ export const NavLink = styled.li`
 
   &:hover {
     color: #7882f9;
-
     transform: scale(1.1);
   }
 
@@ -87,11 +86,11 @@ export const NavLink = styled.li`
       opacity: 1;
       color: #000;
       background: #fff;
+      transform: unset;
     }
 
     &:focus {
       background: none;
-      transform: scale(1);
     }
   }
 `;

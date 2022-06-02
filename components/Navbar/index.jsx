@@ -50,13 +50,19 @@ const Navbar = () => {
               <Link href='/'>Home</Link>
             </NavLink>
             <NavLink>
-              <Link href='#about-section'>About Us</Link>
+              <Link href='#about-section' scroll={false}>
+                About Us
+              </Link>
             </NavLink>
             <NavLink>
-              <Link href='#services-section'>Services</Link>
+              <Link href='#services-section' scroll={false}>
+                Services
+              </Link>
             </NavLink>
             <NavLink>
-              <Link href='#contact-section'>Contact</Link>
+              <Link href='#contact-section' scroll={false}>
+                Contact
+              </Link>
             </NavLink>
           </MenuList>
         </NavMenu>
