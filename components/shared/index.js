@@ -29,6 +29,11 @@ export const IconButton = styled(motion.button)`
       fill: #000;
     }
   }
+  &:active {
+    svg {
+      fill: #fff;
+    }
+  }
 `;
 
 export const Heading1 = styled.h1`
