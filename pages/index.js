@@ -4,8 +4,7 @@ import About from '../containers/About';
 import Contact from '../containers/Contact';
 import Intro from '../containers/Intro';
 import Services from '../containers/Services';
-import Image from 'next/image';
-import bitmap from '../public/grad.svg';
+import { Logo, TextlessLogo } from '../components/icons';
 import { breakpoint } from '../styled/breakpoints.css';
 
 const Home = () => {

@@ -1,13 +1,7 @@
 import React from 'react';
-import { MutedParagraph, MutedSubHeading, Paragraph } from '../shared';
-import {
-  Copy,
-  CopyRow,
-  FooterWrapper,
-  LogoWrapper,
-  Wrapper,
-} from './Footer.css';
-import { Logo, TextlessLogo } from '../icons';
+import { Paragraph } from '../shared';
+import { Copy, FooterWrapper, LogoWrapper, Wrapper } from './Footer.css';
+import { Logo } from '../icons';
 
 const Footer = () => {
   return (
@@ -19,7 +13,7 @@ const Footer = () => {
         </Copy>
       </Wrapper>
       <LogoWrapper>
-        <TextlessLogo />
+        <Logo />
       </LogoWrapper>
       <Wrapper>
         <Paragraph>Links</Paragraph>
