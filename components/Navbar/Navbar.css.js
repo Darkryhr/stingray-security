@@ -88,6 +88,10 @@ export const NavLink = styled.li`
       color: #000;
       background: #fff;
     }
+
+    &:focus {
+      background: none;
+    }
   }
 `;
 
