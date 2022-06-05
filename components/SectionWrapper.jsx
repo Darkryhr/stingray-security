@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useRouter } from 'next/dist/client/router';
 
 const variants = {
   visible: {
@@ -15,6 +16,7 @@ const variants = {
 };
 
 const SectionWrapper = ({ children }) => {
+  const router = useRouter();
   const control = useAnimation();
   const [ref, inView] = useInView({
     threshold: 0.1,
@@ -23,6 +25,7 @@ const SectionWrapper = ({ children }) => {
   useEffect(() => {
     if (inView) {
       control.start('visible');
+      window.history.replaceState({}, document.title, '/');
     }
     // else {
     //   control.start('hidden');

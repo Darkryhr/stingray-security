@@ -10,10 +10,12 @@ import {
 } from './Navbar.css';
 import { Close, Menu, Logo } from '../icons';
 import { Button } from '../shared';
+import { useRouter } from 'next/router';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   let ref = useRef(null);
+  const router = useRouter();
 
   const handleClickOutside = event => {
     if (ref.current && !ref.current.contains(event.target)) setOpen(false);
@@ -25,6 +27,7 @@ const Navbar = () => {
       document.removeEventListener('click', handleClickOutside, true);
   });
 
+  console.log(router.replace);
   return (
     <>
       <Nav>

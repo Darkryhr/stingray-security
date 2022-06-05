@@ -8,6 +8,7 @@ import { Apple, Compass, Tool } from '../components/icons';
 const Services = () => {
   return (
     <ServicesWrapper id='services-section'>
+      <ShadowType>WHATWEDO</ShadowType>
       <div
         style={{
           paddingTop: '2rem',
@@ -71,7 +72,20 @@ export const ServicesWrapper = styled.div`
   margin: 0 auto;
   min-height: 85vh;
   padding: 5rem 5vw;
+  position: relative;
+  overflow: hidden;
   @media (${breakpoint.device.md}) {
     padding: 4rem 0 1rem 0;
   }
+`;
+
+export const ShadowType = styled.h1`
+  font-family: Poppins, sans-serif;
+  position: absolute;
+  font-size: 18rem;
+  font-weight: 700;
+  top: -200px;
+  opacity: 0.02;
+  z-index: 1;
+  left: -10%;
 `;

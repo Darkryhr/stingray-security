@@ -65,7 +65,7 @@ export const NavLink = styled.li`
   font-family: Poppins, sans-serif;
   cursor: pointer;
   display: block;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
   font-weight: 500;
   transition: ease 0.2s;
   &:last-of-type {
@@ -143,8 +143,8 @@ export const MenuList = styled.ul`
 `;
 
 export const LogoWrapper = styled(motion.div)`
-  padding: 1rem 0;
-  margin-bottom: 0.5rem;
+  padding: 0;
+  padding-bottom: 0.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;

@@ -51,11 +51,11 @@ export const Heading1 = styled.h1`
 
 export const Heading2 = styled.h2`
   font-family: Poppins, sans-serif;
-  font-size: 2vw;
+  font-size: 3vw;
   padding: 1rem 0;
   ${props => (props.center ? 'text-align:center;' : '')}
   @media (${breakpoint.device.sm}) {
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
   @media (${breakpoint.device.xs}) {

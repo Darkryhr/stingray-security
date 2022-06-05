@@ -11,7 +11,17 @@ const Contact = () => {
       <Pre>Let&apos;s Talk</Pre>
       <Heading2 center>We will come up with a solution, try us.</Heading2>
       <Divider />
-      <MailLink href='mailto:contact@stingray.team'>
+      <MailLink
+        href='mailto:contact@stingray.team'
+        whileHover={{
+          scale: 1.1,
+          filter: 'brightness(1.1)',
+        }}
+        whileTap={{
+          scale: 0.9,
+          filter: 'brightness(0.9)',
+        }}
+      >
         contact@stingray.team
       </MailLink>
     </ContactWrapper>
