@@ -32,16 +32,8 @@ const Navbar = () => {
     <>
       <Nav>
         <Link href='/'>
-          <LogoWrapper
-            transition={{
-              duration: 0.05,
-            }}
-            whileHover={{
-              letterSpacing: '1px',
-            }}
-          >
+          <LogoWrapper>
             <Logo />
-            <span>StingraySecurity</span>
           </LogoWrapper>
         </Link>
         <NavMenu open={open} ref={ref} onClick={() => setOpen(false)}>

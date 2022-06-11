@@ -10,24 +10,24 @@ import SectionWrapper from '../components/SectionWrapper';
 const Home = () => {
   return (
     <>
-      <DarkStrip>
-        <SectionWrapper>
-          <Intro />
-        </SectionWrapper>
-      </DarkStrip>
+      <SectionWrapper>
+        <Intro />
+      </SectionWrapper>
 
-      <SectionWrapper>
-        <About />
-      </SectionWrapper>
-      {/* <DualStrip></DualStrip> */}
       <DarkStrip>
         <SectionWrapper>
-          <Services />
+          <About />
         </SectionWrapper>
       </DarkStrip>
+      {/* <DualStrip></DualStrip> */}
       <SectionWrapper>
-        <Contact />
+        <Services />
       </SectionWrapper>
+      <DarkStrip>
+        <SectionWrapper>
+          <Contact />
+        </SectionWrapper>
+      </DarkStrip>
     </>
   );
 };
@@ -35,7 +35,7 @@ const Home = () => {
 export default Home;
 
 export const DarkStrip = styled.div`
-  background-color: #131313;
+  background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const DualStrip = styled.div`

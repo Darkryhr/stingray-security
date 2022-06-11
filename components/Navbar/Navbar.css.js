@@ -50,8 +50,8 @@ const flow = keyframes`
 `;
 
 export const GradientBorder = styled.div`
-  background-color: #4c4177;
-  background: linear-gradient(270deg, #7882f9 0%, #4f1271 74%);
+  background-color: ${({ theme }) => theme.colors.accent};
+  background: linear-gradient(270deg, #b202d1 0%, #4f1271 74%);
   background-size: 400% 400%;
   animation: ${flow} 8s ease infinite;
   height: 0.3rem;
@@ -73,7 +73,7 @@ export const NavLink = styled.li`
   }
 
   &:hover {
-    color: #7882f9;
+    color: ${({ theme }) => theme.colors.accent};
     transform: scale(1.1);
   }
 
@@ -109,7 +109,7 @@ export const NavMenu = styled.div`
     z-index: 999;
     right: 0;
     top: 0;
-    background-color: #000;
+    background-color: ${({ theme }) => theme.colors.primary};
     .close {
       display: unset;
       float: right;
@@ -144,14 +144,14 @@ export const MenuList = styled.ul`
 
 export const LogoWrapper = styled(motion.div)`
   padding: 0;
-  padding-bottom: 0.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   min-height: 65px;
+  padding: 1.2rem 0 1.5rem 0;
   svg {
-    max-width: 80px;
-    fill: #fff;
+    max-width: 100px;
+    fill: ${({ theme }) => theme.colors.text};
     transition: ease 150ms;
   }
   span {
@@ -159,7 +159,7 @@ export const LogoWrapper = styled(motion.div)`
     padding-left: 10px;
     font-family: Poppins, sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: ${({ theme }) => theme.colors.text};
     transition: ease 150ms;
   }
 `;

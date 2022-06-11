@@ -12,8 +12,8 @@ const GlobalStyle = createGlobalStyle`
     }
     
     body {
-        background: #1E1E1E;
-        color: #F9F8F8;
+        background:  ${({ theme }) => theme.colors.primary};
+        color:  ${({ theme }) => theme.colors.text};
         font-family: monospace;
         overflow-x: hidden;
     }

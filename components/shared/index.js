@@ -81,14 +81,14 @@ export const Heading3 = styled.h3`
 `;
 
 export const Lead = styled.p`
-  color: #7882f9;
+  color: ${({ theme }) => theme.colors.accent};
   text-align: center;
   font-size: 4vw;
   padding: 1.5rem 0;
 `;
 
 export const Pre = styled.h4`
-  color: #7882f9;
+  color: ${({ theme }) => theme.colors.accent};
   font-family: Poppins, sans-serif;
 
   font-weight: 600;
@@ -127,7 +127,7 @@ export const Divider = styled.div`
   width: 36px;
   height: 3px;
   border-radius: 5px;
-  background-color: white;
+  background-color: ${({ theme }) => theme.colors.text};
   opacity: 0.7;
 
   margin: 0.5rem ${props => (props.center ? 'auto' : 0)} 1.5rem

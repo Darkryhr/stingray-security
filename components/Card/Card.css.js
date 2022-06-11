@@ -12,13 +12,6 @@ export const CardWrapper = styled.div`
   }
 `;
 
-export const Placeholder = styled.div`
-  width: 100%;
-  max-width: 400px;
-  height: 260px;
-  background: white;
-`;
-
 export const Paragraph = styled.p`
   text-align: center;
   font-size: 0.9rem;
