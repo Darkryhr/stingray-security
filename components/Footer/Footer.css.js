@@ -21,12 +21,12 @@ export const FooterWrapper = styled.div`
 export const LogoWrapper = styled.div`
   max-width: 120px;
   padding: 1rem 0;
-  /* position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  svg {
+    &:last-child {
+      display: none;
+    }
+  }
   @media (${breakpoint.device.sm}) {
-    max-width: 120px;
     padding: 2rem 0;
   }
 `;
@@ -35,7 +35,6 @@ export const Copy = styled.p`
   font-family: Poppins, san-serif;
   font-weight: 700;
   text-transform: uppercase;
-
   span {
     font-weight: 500;
     opacity: 0.6;
@@ -44,8 +43,8 @@ export const Copy = styled.p`
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-width: 220px;
-  text-align: end;
+  max-width: 200px;
+  text-align: start;
   @media (${breakpoint.device.sm}) {
     text-align: center;
   }
@@ -53,5 +52,5 @@ export const Wrapper = styled.div`
 
 export const SocialWrapper = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 `;

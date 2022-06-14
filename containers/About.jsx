@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Divider, Heading2, Lead, Paragraph, Pre } from '../components/shared';
+import { Divider, Heading2, Paragraph, Pre } from '../components/shared';
 import { breakpoint } from '../styled/breakpoints.css';
 import Image from 'next/image';
 

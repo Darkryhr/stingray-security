@@ -10,7 +10,6 @@ export const Nav = styled.nav`
   max-width: ${breakpoint.size.sm};
 
   margin: 0 auto;
-  padding: 0 2.5rem;
   max-height: 85px;
   /* background: #131313; */
   @media (${breakpoint.device.sm}) {
@@ -143,16 +142,21 @@ export const MenuList = styled.ul`
 `;
 
 export const LogoWrapper = styled(motion.div)`
-  padding: 0;
   cursor: pointer;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   min-height: 65px;
-  padding: 1.2rem 0 1.5rem 0;
+  padding: 1.5rem 0 1.5rem 0;
   svg {
-    max-width: 100px;
+    margin-bottom: 0.3rem;
+
+    max-width: 115px;
     fill: ${({ theme }) => theme.colors.text};
     transition: ease 150ms;
+    &:first-child {
+      max-width: 80px;
+      margin-right: 0.6rem;
+    }
   }
   span {
     margin-top: 8px;

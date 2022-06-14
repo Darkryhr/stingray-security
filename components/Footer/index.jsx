@@ -16,7 +16,7 @@ const Footer = () => {
       <Wrapper>
         <Copy>
           <span>&copy;2022 </span>
-          stingraysecurity
+          stingray
         </Copy>
       </Wrapper>
       <LogoWrapper>

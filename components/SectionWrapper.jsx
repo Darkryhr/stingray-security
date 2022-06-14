@@ -27,9 +27,6 @@ const SectionWrapper = ({ children }) => {
       control.start('visible');
       window.history.replaceState({}, document.title, '/');
     }
-    // else {
-    //   control.start('hidden');
-    // }
   }, [control, inView]);
 
   return (

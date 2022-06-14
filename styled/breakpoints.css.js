@@ -1,6 +1,7 @@
 const size = {
   //* smartphone - max 480px
   xs: '480px',
+  //TODO: added in later, correct order later
   md: '768px',
   //* Tablets Ipads portrait mode max-width:1024px
   sm: '1024px',

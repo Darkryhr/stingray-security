@@ -32,7 +32,12 @@ const Navbar = () => {
     <>
       <Nav>
         <Link href='/'>
-          <LogoWrapper>
+          <LogoWrapper
+            whileHover={{
+              filter: 'saturate(2)',
+              scale: 1.05,
+            }}
+          >
             <Logo />
           </LogoWrapper>
         </Link>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Divider, Heading2, Lead, Pre } from '../components/shared';
+import { Divider, Heading2, Pre } from '../components/shared';
 import styled from 'styled-components';
 import { breakpoint } from '../styled/breakpoints.css';
 import { motion } from 'framer-motion';
